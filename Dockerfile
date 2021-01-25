@@ -10,6 +10,8 @@ RUN conda update --all -y &&\
     conda install -y -c bioconda pysam &&\
     #R3.5.2
     conda install -y -c conda-forge r-ggfortify r-ggplot2 &&\
-    conda install -y -c bioconda bioconductor-dnacopy bioconductor-rsamtools
+    conda install -y -c bioconda bioconductor-dnacopy bioconductor-rsamtools &&\
+    #install
+    pip install NiPTUNE
     
 CMD ["/bin/bash"]
